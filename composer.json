@@ -1,0 +1,54 @@
+{
+    "name": "trackstone/laravel-immo-data",
+    "description": "Laravel integration for the Immo Data PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["trackstone", "immo-data", "laravel", "real-estate", "api", "france", "immobilier"],
+    "homepage": "https://github.com/trackstone/laravel-immo-data",
+    "authors": [
+        {
+            "name": "Trackstone Dev Team",
+            "email": "hello@trackstone.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "trackstone/immo-data-php-sdk": "^1.0",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/contracts": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ImmoData\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ImmoData\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ImmoData\\Laravel\\ImmoDataServiceProvider"
+            ],
+            "aliases": {
+                "ImmoData": "ImmoData\\Laravel\\Facades\\ImmoData"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "pint",
+        "cs:check": "pint --test"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
