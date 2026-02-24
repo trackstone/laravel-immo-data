@@ -3,7 +3,15 @@
     "description": "Laravel integration for the Immo Data PHP SDK",
     "type": "library",
     "license": "MIT",
-    "keywords": ["trackstone", "immo-data", "laravel", "real-estate", "api", "france", "immobilier"],
+    "keywords": [
+        "trackstone",
+        "immo-data",
+        "laravel",
+        "real-estate",
+        "api",
+        "france",
+        "immobilier"
+    ],
     "homepage": "https://github.com/trackstone/laravel-immo-data",
     "authors": [
         {
