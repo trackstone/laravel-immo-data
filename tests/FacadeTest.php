@@ -8,6 +8,7 @@ use ImmoData\Laravel\Facades\ImmoData;
 use ImmoData\Resources\GeocodeResource;
 use ImmoData\Resources\GeoResource;
 use ImmoData\Resources\MarketResource;
+use ImmoData\Resources\TransactionsResource;
 use ImmoData\Resources\ValuationResource;
 
 final class FacadeTest extends TestCase
@@ -37,5 +38,10 @@ final class FacadeTest extends TestCase
     public function test_facade_resolves_market_resource(): void
     {
         $this->assertInstanceOf(MarketResource::class, ImmoData::market());
+    }
+
+    public function test_facade_resolves_transactions_resource(): void
+    {
+        $this->assertInstanceOf(TransactionsResource::class, ImmoData::transactions());
     }
 }

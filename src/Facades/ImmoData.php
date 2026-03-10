@@ -9,6 +9,7 @@ use ImmoData\ImmoDataClient;
 use ImmoData\Resources\GeocodeResource;
 use ImmoData\Resources\GeoResource;
 use ImmoData\Resources\MarketResource;
+use ImmoData\Resources\TransactionsResource;
 use ImmoData\Resources\ValuationResource;
 
 /**
@@ -16,6 +17,7 @@ use ImmoData\Resources\ValuationResource;
  * @method static GeocodeResource geocode()
  * @method static GeoResource geo()
  * @method static MarketResource market()
+ * @method static TransactionsResource transactions()
  *
  * @see ImmoDataClient
  */
