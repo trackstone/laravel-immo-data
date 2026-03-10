@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": "^8.3",
-        "trackstone/immo-data-php-sdk": "^1.0",
+        "trackstone/immo-data-php-sdk": "^1.1",
         "illuminate/support": "^11.0|^12.0",
         "illuminate/contracts": "^11.0|^12.0"
     },
