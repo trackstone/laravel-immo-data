@@ -6,6 +6,7 @@ namespace ImmoData\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use ImmoData\ImmoDataClient;
+use ImmoData\Resources\DpeResource;
 use ImmoData\Resources\GeocodeResource;
 use ImmoData\Resources\GeoResource;
 use ImmoData\Resources\MarketResource;
@@ -18,6 +19,7 @@ use ImmoData\Resources\ValuationResource;
  * @method static GeoResource geo()
  * @method static MarketResource market()
  * @method static TransactionsResource transactions()
+ * @method static DpeResource dpe()
  *
  * @see ImmoDataClient
  */

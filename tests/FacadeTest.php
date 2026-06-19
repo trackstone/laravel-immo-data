@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace ImmoData\Laravel\Tests;
 
 use ImmoData\Laravel\Facades\ImmoData;
+use ImmoData\Resources\DpeResource;
 use ImmoData\Resources\GeocodeResource;
 use ImmoData\Resources\GeoResource;
 use ImmoData\Resources\MarketResource;
@@ -43,5 +44,10 @@ final class FacadeTest extends TestCase
     public function test_facade_resolves_transactions_resource(): void
     {
         $this->assertInstanceOf(TransactionsResource::class, ImmoData::transactions());
+    }
+
+    public function test_facade_resolves_dpe_resource(): void
+    {
+        $this->assertInstanceOf(DpeResource::class, ImmoData::dpe());
     }
 }
