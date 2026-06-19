@@ -129,6 +129,11 @@ $result = $client->geocode()->search('Lyon');
 | `geo()` | `subdistrict(string)` | Get subdistrict (IRIS) by code |
 | `market()` | `priceHistory(string, GeoLevel, RealtyType, ?string, ?string)` | Price history |
 | `market()` | `currentPrice(string, GeoLevel, RealtyType)` | Current price per m² |
+| `market()` | `saleDurationHistory(string, GeoLevel, ?string, ?string, DurationUnit)` | Sale-duration history |
+| `market()` | `currentSaleDuration(string, GeoLevel, DurationUnit)` | Current average sale duration |
+| `transactions()` | `search(TransactionsRequest)` | Real estate transactions (DVF) |
+| `dpe()` | `search(DpeRequest)` | Search Energy Performance Diagnostics (DPE) |
+| `dpe()` | `get(string)` | Get a single DPE by its ADEME number |
 
 For full documentation on request parameters, DTOs, enums, and error handling, see the [PHP SDK documentation](https://github.com/trackstone/immo-data-php-sdk).
 
