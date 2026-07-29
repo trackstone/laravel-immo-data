@@ -134,6 +134,7 @@ $result = $client->geocode()->search('Lyon');
 | `transactions()` | `search(TransactionsRequest)` | Real estate transactions (DVF) |
 | `dpe()` | `search(DpeRequest)` | Search Energy Performance Diagnostics (DPE) |
 | `dpe()` | `get(string)` | Get a single DPE by its ADEME number |
+| `listings()` | `statistics(ListingsStatisticsRequest)` | Aggregated statistics on listings for sale |
 
 For full documentation on request parameters, DTOs, enums, and error handling, see the [PHP SDK documentation](https://github.com/trackstone/immo-data-php-sdk).
 
