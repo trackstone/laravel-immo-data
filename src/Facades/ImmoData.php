@@ -9,6 +9,7 @@ use ImmoData\ImmoDataClient;
 use ImmoData\Resources\DpeResource;
 use ImmoData\Resources\GeocodeResource;
 use ImmoData\Resources\GeoResource;
+use ImmoData\Resources\ListingsResource;
 use ImmoData\Resources\MarketResource;
 use ImmoData\Resources\TransactionsResource;
 use ImmoData\Resources\ValuationResource;
@@ -20,6 +21,7 @@ use ImmoData\Resources\ValuationResource;
  * @method static MarketResource market()
  * @method static TransactionsResource transactions()
  * @method static DpeResource dpe()
+ * @method static ListingsResource listings()
  *
  * @see ImmoDataClient
  */
